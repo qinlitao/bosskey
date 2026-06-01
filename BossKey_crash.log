@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\14250\Desktop\BossKey\main.py", line 165, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\14250\Desktop\BossKey\main.py", line 63, in main
+    hm.register_all(rules)
+    ~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\14250\Desktop\BossKey\hotkey_manager.py", line 176, in register_all
+    self._hwnd = self._create_message_window()
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\14250\Desktop\BossKey\hotkey_manager.py", line 129, in _create_message_window
+    ctypes.wintypes.HWND_MESSAGE, 0, wc.hInstance, None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ctypes.wintypes' has no attribute 'HWND_MESSAGE'
